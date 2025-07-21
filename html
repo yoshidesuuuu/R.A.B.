@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>るき</title>
+</head>
+<body>
+  <!-- ボタン -->
+  <button id="playButton">るきを撃退する</button>
+
+  <!-- 音声ファイル -->
+  <audio id="myAudio" src="るき用.m4a"></audio>
+
+  <script>
+    const button = document.getElementById('playButton');
+    const audio = document.getElementById('myAudio');
+
+    button.addEventListener('click', () => {
+      audio.play();
+    });
+  </script>
+</body>
+</html>
