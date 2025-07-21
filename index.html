@@ -2,13 +2,36 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>るき</title>
+  <title>るきブロッカー</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* 横中央 */
+      align-items: center;     /* 縦中央 */
+      height: 100vh;           /* 画面全体高さ */
+      margin: 0;               /* 余白なし */
+      background-color: #f0f0f0; /* 背景薄グレー（任意） */
+    }
+    #playButton {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 50%; /* 丸くする */
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.1s;
+    }
+    #playButton:active {
+      transform: scale(0.95);
+    }
+  </style>
 </head>
 <body>
-  <!-- ボタン -->
   <button id="playButton">るきを撃退する</button>
 
-  <!-- 音声ファイル -->
   <audio id="myAudio" src="るき用.m4a"></audio>
 
   <script>
